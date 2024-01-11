@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    </link>
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Imersão Dev</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+        <p class="page-subtitle">
+            Qual seu filme favorito?
+        </p>
+        <div class="form-wrapper">
+            <div class="div-input">
+                <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+                <input type="text" id="trailer" name="trailer" placeholder="Insira endereço do trailer">
+            </div>
+            <button onClick="adicionarFilme()">Adicionar Filme</button>
+        </div>
+    </div>
+    <!-- <div id="listaFilmes"></div> -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</body>
